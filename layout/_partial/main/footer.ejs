@@ -28,6 +28,8 @@ function layoutDiv() {
   if (content) {
     el += markdown(content)
   }
+  el += '<span class="totalcount">published ' + site.posts.length + ' Blogs · </span><span class="post-count">in total ' + totalcount(site) + ' words</span>'
+
   el += '</div></footer>'
   return el
 }
